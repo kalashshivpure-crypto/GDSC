@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GDG AITR Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3e8ff; /* halka lavender */
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Top Header Card */
+    .header {
+      background: white;
+      padding: 60px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .header h2 {
+      margin: 0 0 10px 0;
+      font-size: 32px;
+      color: #333;
+    }
+    .header p {
+      font-size: 18px;
+      margin: 0;
+      color: #666;
+    }
+
+    /* Form Card */
+    form {
+      background: white;
+      padding: 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex-direction:column ;
+      gap: 25px;
+    }
+
+    input {
+      width: 100%;
+      padding: 18px 22px;
+      margin: 12px 0;
+      font-size: 18px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      margin: 20px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #6200ea;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #4500b5;
+    }
+
+    #message {
+      color: green;
+      display: none;
+      margin-top: 15px;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Card -->
+    <div class="header">
+      <h2>GDSC AITR Event Registration</h2>
+      <p>Fill out this form to register for the event 2025</p>
+    </div>
+
+    <!-- Form Card -->
+    <form id="regForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Phone (10 digits)" required>
+      <input type="text" id="year" placeholder="Year (e.g., 2nd Year)" required>
+      <input type="text" id="branch" placeholder="Branch (e.g., CSE)" required>
+      <button type="submit">Register</button>
+      <div id="message">Registration Successful!</div>
+    </form>
+  </div>
+</body>
+</html>
